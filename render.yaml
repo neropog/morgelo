@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: morgilio-estatico
+    runtime: static
+    buildCommand: echo "Site estatico pronto"
+    staticPublishPath: ./public
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
